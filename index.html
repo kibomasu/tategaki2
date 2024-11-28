@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>テキスト画像化ツール</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="input-area">
+    <h1>テキスト画像化ツール</h1>
+    <textarea id="input-text" placeholder="ここにテキストを入力してください..."></textarea>
+    <input id="title-input" type="text" placeholder="タイトルを入力してください...">
+    <label for="font-select">フォント選択:</label>
+    <select id="font-select">
+      <option value="serif">Serif</option>
+      <option value="sans-serif">Sans-Serif</option>
+      <option value="Noto Serif JP">Noto Serif JP</option>
+    </select>
+    <label for="bg-color">背景色:</label>
+    <input id="bg-color" type="color" value="#ffffff">
+    <label for="text-color">テキスト色:</label>
+    <input id="text-color" type="color" value="#000000">
+    <label for="title-color">タイトル色:</label>
+    <input id="title-color" type="color" value="#000000">
+    <button id="generate">画像を生成</button>
+  </div>
+  <div id="output-area"></div>
+  <script src="script.js"></script>
+</body>
+</html>
